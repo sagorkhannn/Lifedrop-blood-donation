@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LifeDrop Blood Donation Camp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Blood Donation Camp</h1>
+
+<h3>LifeDrop Blood Donation Registration</h3>
+
+<form>
+
+<div class="form-box">
+
+<input type = "text" id = "name" placeholder="Full Name">
+
+<input type = "email" id ="email" placeholder="email">
+
+<input type="text" id="phone" placeholder="Phone">
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+</div>
+
+<h4>Gender</h4>
+
+<input type="radio" name="gender" id="genderMale"> <label for="genderMale">Male</label>
+<input type="radio" name="gender" id="genderFemale"> <label for="genderFemale">Female</label>
+
+<br><br>
+
+<h4>Blood Group</h4>
+
+<select id ="blood">
+
+<option>A+</option>
+
+<option>B+</option>
+
+<option>O+</option>
+
+</select>
+
+<br><br>
+
+<button type="button" onclick="checkEligibility()">Check Eligibility</button>
+
+<br><br>
+
+</form>
+
+<div id ="result"></div>
+
+</div>
+
+<script src = "script.js"></script>
+
+</body>
+</html>
